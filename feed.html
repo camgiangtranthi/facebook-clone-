@@ -955,10 +955,271 @@
                             </li>
                         </ul>
                     <!-- secondary menu -->
+                    <div
+                        class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center mx-2"
+                        style="width: 38px; height: 38px; object-fit: cover;"
+                        type="button" 
+                        id="secMenu" 
+                        data-bs-toggle="dropdown" 
+                        aria-expanded="false"
+                        data-bs-auto-close="outside"
+                    >
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                        <!-- secondary menu dd -->
+                        <ul class="dropdown-menu border-0 shadow p-3" 
+                            aria-labelledby="secMenu"
+                            style="width: 23em; max-height: 600px;"
+                        >
+                            <!-- avatar -->
+                            <li class="dropdown-item p-1 rounded d-flex" type="button">
+                                <img 
+                                    src="https://source.unsplash.com/collection/happy-people" 
+                                    alt="avatar" 
+                                    class="rounded-circle me-2"
+                                    style="width: 45px;height: 45px;object-fit: cover;"
+                                >
+                                <div>
+                                    <p class="m-0">John</p>
+                                    <p class="m-0 text-muted">See your profile</p>
+                                </div>
+                            </li>
+                            <!-- feadback -->
+                            <hr/>
+                            <li class="dropdown-item p-1 rounded d-flex align-items-center">
+                                <i class="fa-solid fa-circle-exclamation bg-2 rounded-circle p-2"></i>
+                                <div class="ms-3">
+                                    <p class="m-0">Give feedback</p>
+                                    <p class="m-0 text-muted fs-7">Help us improve the new Facebook</p>
+                                </div>
+                            </li>
+                            <!-- options -->
+                            <hr/>
+                            <!-- option 1 -->
+                            <li class="dropdown-item p-1 rounded my-3" type="button">
+                                <ul class="navbar-nav">
+                                    <!-- item 1 -->
+                                    <li class="nav-item">
+                                        <div class="d-flex" data-bs-toggle="dropdown">
+                                            <!-- icon -->
+                                            <i class="fas fa-cog bg-gray p-2 rounded-circle"></i>
+                                            <div class="d-flex justify-content-between align-items-center align-items-center w-100 ms-3">
+                                                <p class="m-0">Settings & Privacy</p>
+                                                <i class="fas fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                        <!-- nested menu -->
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fas fa-cog"></i>
+                                                    </div>
+                                                    <p class="m-0">Settings</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fa-solid fa-lock"></i>
+                                                    </div>
+                                                    <p class="m-0">Privacy Checkup</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fa-solid fa-unlock"></i>
+                                                    </div>
+                                                    <p class="m-0">Privacy Shortcuts</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fas fa-list"></i>
+                                                    </div>
+                                                    <p class="m-0">Activity Log</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fas fa-newspaper"></i>
+                                                    </div>
+                                                    <p class="m-0">News feed Preferences</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fas fa-globe"></i>
+                                                    </div>
+                                                    <p class="m-0">Language</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                             <!-- option 2 -->
+                            <li class="dropdown-item p-1 rounded my-3" type="button">
+                                <ul class="navbar-nav">
+                                    <!-- item 1 -->
+                                    <li class="nav-item">
+                                        <div class="d-flex" data-bs-toggle="dropdown">
+                                            <!-- icon -->
+                                            <i class="fa-solid fa-circle-question bg-gray rounded-circle p-2"></i>
+                                            <div class="d-flex justify-content-between align-items-center align-items-center w-100 ms-3">
+                                                <p class="m-0">Help and Support</p>
+                                                <i class="fas fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                        <!-- nested menu -->
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fas fa-cog"></i>
+                                                    </div>
+                                                    <p class="m-0">Settings</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fa-solid fa-lock"></i>
+                                                    </div>
+                                                    <p class="m-0">Privacy Checkup</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fa-solid fa-unlock"></i>
+                                                    </div>
+                                                    <p class="m-0">Privacy Shortcuts</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fas fa-list"></i>
+                                                    </div>
+                                                    <p class="m-0">Activity Log</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fas fa-newspaper"></i>
+                                                    </div>
+                                                    <p class="m-0">News feed Preferences</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fas fa-globe"></i>
+                                                    </div>
+                                                    <p class="m-0">Language</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- option 3 -->
+                            <li class="dropdown-item p-1 rounded my-3" type="button">
+                                <ul class="navbar-nav">
+                                    <!-- item 1 -->
+                                    <li class="nav-item">
+                                        <div class="d-flex" data-bs-toggle="dropdown">
+                                            <!-- icon -->
+                                            <i class="fa-solid fa-moon bg-gray rounded-circle p-2"></i>
+                                            <div class="d-flex justify-content-between align-items-center align-items-center w-100 ms-3">
+                                                <p class="m-0">Display & Accessibility</p>
+                                                <i class="fas fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                        <!-- nested menu -->
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fas fa-cog"></i>
+                                                    </div>
+                                                    <p class="m-0">Settings</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fa-solid fa-lock"></i>
+                                                    </div>
+                                                    <p class="m-0">Privacy Checkup</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fa-solid fa-unlock"></i>
+                                                    </div>
+                                                    <p class="m-0">Privacy Shortcuts</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fas fa-list"></i>
+                                                    </div>
+                                                    <p class="m-0">Activity Log</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fas fa-newspaper"></i>
+                                                    </div>
+                                                    <p class="m-0">News feed Preferences</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item d-flex align-items-center">
+                                                    <div class="d-flex align-items-center justify-content-center rounded-circle p-2 bg-gray me-2">
+                                                        <i class="fas fa-globe"></i>
+                                                    </div>
+                                                    <p class="m-0">Language</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- option 4 -->
+                            <li class="dropdown-item p-1 rounded my-3" type="button">
+                                <ul class="navbar-nav">
+                                    <!-- item 1 -->
+                                    <li class="nav-item">
+                                        <a href="./index.html" class="d-flex text-decoration-none text-dark">
+                                            <!-- icon -->
+                                            <i class="fa-solid fa-gear bg-gray rounded-circle p-2"></i>
+                                            <div class="d-flex justify-content-between align-items-center align-items-center w-100 ms-3">
+                                                <p class="m-0">Log out</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                 </div>
             </div>
         </div>
     </div>
+      <!-- ====================== Main content ========================== -->
+        <div class="container-fluid">
+            <div class="row"></div>
+        </div>
       <!-- ====================== New chat ========================== -->
         <div 
             class="modal fade" 
@@ -992,8 +1253,7 @@
                 </div>
             </div>
             </div>
-        </div>
-
+        </div>        
         <!-- ====================== Single chat ========================== -->
         <!-- single chat 1 -->
         <div 
